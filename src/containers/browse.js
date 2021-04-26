@@ -116,7 +116,9 @@ export function BrowseContainer({ slides }) {
             <Card.Feature category={category}>
               <Player>
                 <Player.Button />
-                <Player.Video src='/videos/endgame.mp4' />
+                <Player.Video
+                  src={`/videos/${slideItem.title.toLowerCase()}.mp4`}
+                />
               </Player>
             </Card.Feature>
           </Card>
